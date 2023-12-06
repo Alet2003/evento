@@ -125,8 +125,8 @@ function crear_vuelo() {
                 `;
       }
       vuelo_modal += `
-                <div style="height: 110vh;max-height: fit-content;width: 90%;max-width: fit-content;min-width: fit-content;min-height: fit-content;" class="modal-dialog">
-                                <div style="border-radius: 129px 20px 129px 20px;" class="modal-content">
+                <div style="height: 110vh;max-height: fit-content;width: 90%;max-width: fit-content;min-width: fit-content;min-height: fit-content; " class="modal-dialog">
+                                <div style="border-radius: 129px 20px 129px 20px;background-color: #bbbbbb;" class="modal-content">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Cerrar"></button>
                                 <div class="modal-body">
                                   <div class="articule">
@@ -146,7 +146,7 @@ function crear_vuelo() {
                           " class="modal-footer">
                               <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</a>
                               <a href="/fronted/indexreserva" type="button" class="btn btn-primary" style="
-                              background-color: #3352ff;">Comprar Ticket</a>
+                              background-color: #6ba1ff;border: 0;">Comprar Ticket</a>
                               </div>
                               </div>
                             </div>
