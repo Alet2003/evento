@@ -166,13 +166,13 @@ body {
 
 .text-wrap.active p {
     font-weight: bold;
-    color: #0400a1;
+    color: #ffffff;
     transition: 400ms ease;
 }
 
 .circle {
-    background-color: #5fb7ff;
-    border: 3px solid #3352ff;
+    background-color: #8a9ea7;
+    border: 3px solid #6d6d6d;
     color: #ffffff;
     font-weight: 700;
     border-radius: 50%;
@@ -187,7 +187,7 @@ body {
 }
 
 .text-wrap.active div.circle {
-    border-color: #3352ff;
+    border-color: #ffffff;
     color: #ffffff;
 }
 
@@ -244,6 +244,7 @@ body {
     box-shadow: 0 4px 8px;
 }
 #Pasajeros{
+    background-color: transparent;
     max-width: -webkit-fill-available;
     border-left: 0px;
     border-right: 0px;
@@ -251,6 +252,8 @@ body {
     border-bottom: 2px solid #656565;
 }
 .input-info{
+    color: white;
+    background-color: transparent;
     width: -webkit-fill-available;
     border-radius: 1px;
     border-left: 0px;
@@ -261,7 +264,7 @@ body {
 
 #Pasajeros::before{
     max-width: -webkit-fill-available;
-    border-color: #0026f7 !important;
+    border-color: #f9f9f9 !important;
     border: 2px solid;
 }
 .container-fluid{
