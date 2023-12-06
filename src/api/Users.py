@@ -73,6 +73,8 @@ def ingresar():
             'correou': correo.correo,
             'password': correo.password
         }
+        session['correou'] = correo.correo
+        session['password'] = correo.password
     print(datos)
     return jsonify(datos)
 

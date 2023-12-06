@@ -372,3 +372,23 @@ def guar_reserva():
     db.session.add(new_reser)
     db.session.commit()
     return redirect('/vuelo')
+
+@routes_vuelos.route('/buscar_vuelo', methods=['POST'] )
+def buscar_vuelo():
+    global extras
+    correou = session.get('correou')
+    passwor = session.get('password')
+    resultado = db.session.query(Vuelo).filter(
+        Informacion.origen == origen,
+        Informacion.destino == destino,
+    ).all()
+    id_usuario = request.json['id_usuario']
+    id_vuelo = request.json['id_vuelo']
+    estadoreserva = request.json['estadoreserva']
+    asientosReservados = request.json['asientosReservados']
+    fechaReserva = request.json['fechaReserva']
+    rese = request.json['id_usuario','id_vuelo', 'estadoreserva', 'asientosReservados', 'fechaReserva']
+    new_reser = Reserva(rese)
+    db.session.add(new_reser)
+    db.session.commit()
+    return redirect('/vuelo')

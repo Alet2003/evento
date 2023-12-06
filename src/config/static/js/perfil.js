@@ -33,3 +33,7 @@ function cerrarUS() {
 document.addEventListener('DOMContentLoaded', function() {
     cargarus();
 });
+
+function carar_historial(){
+    
+}
