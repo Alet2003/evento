@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Venta de Tiquetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:  #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .Titulo {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #007bff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 0;
+        }
+
+        .icon img {
+            height: 100px; 
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            transform: translateY(-50%);
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shape">
+        <img class="pt-7 pt-md-0 hero-img" src="../../static/img/hero/shape.svg" alt="Decorative Shape">
+    </div>
+
+    <form id="registroForm">
+        <div class="logo">
+            <a class="navbar-brand" href="/fronted/indexhome"><img src="../../static/img/logo.svg" height="34"
+                    alt="logo" /></a>
+        </div>
+    <div class="Titulo">
+        <h1>Mi Perfil</h1>
+    </div>
+    <section>
+        <h2>Información del Usuario</h2>
+        <p id="R1"><strong>Nombre:</strong></p>
+        <p id="R2"><strong>Correo Electrónico:</strong></p>
+        <p id="R3"><strong>Número de Teléfono:</strong></p>
+        <p id="R4"><strong>Dirección:</strong></p>
+        <h2>Historial de Vuelos</h2>
+        <ul>
+            <li id="R5"></li>
+        </ul>
+        <button type="button" onclick="cerrarUS()">Cerrar Sesión</button>
+    </section>
+    <div class="icon">
+        <img src="../../static/img/category/icon2.png" alt="Icono">
+    </div>
+
+    <script src="{{url_for('static', filename='js/Perfil.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
